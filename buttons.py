@@ -1,16 +1,21 @@
 
 def but():
-    button = input('You want to insert friend?\nPress Y/N: ')
-    button = button.lower()
+
+    button = None
+
+    while button == None:
+        button = input('Do you want to insert friend?\nPress Y/N: ')
+        button = button.lower()
+        # some operations
+        if button == 'y':
+            friends = input('Insert friend name:\n')
+            list = []
+            list.append(friends)
+            break
+        elif button == 'n':
+            print('End program.')
+            break     
+        else:
+            button = None
 
 but()
-
-while but().__class__ == str and int:
-    if but() == 'y':
-        from friends import add_friend
-        add_friend()
-    elif but() == 'y':
-        print('End program.')
-        break     
-    else:
-        but()
