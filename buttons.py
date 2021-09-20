@@ -14,7 +14,7 @@ def but():
             break
         elif button == 'n':
             print('End program.')
-            break     
+            break
         else:
             button = None
 
