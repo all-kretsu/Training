@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "python": "e:/tools/re/python-3.8.3-embed-amd64/python.exe"
+            "python": "c/Users/PC/AppData/Local/Microsoft/WindowsApps/python.exe"
         }
     ]
 }

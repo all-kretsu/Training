@@ -1,3 +1,5 @@
+
+
 player_1={
     'player name' : input('Insert player 1 name: '),
     'health' : 100,
@@ -12,9 +14,10 @@ player_2={
     'armor' : 50
 }
 
+#function of attack of defender
 def attack(attacker, defender):
 
-    while defender == True:
+    while defender['health'] != 0:
 
         if attacker['damage'] == 10:
             
@@ -27,7 +30,8 @@ def attack(attacker, defender):
         elif defender['health'] == 0:
             print(attacker['player name'] + ' win!')
             break
-    
+
 print(player_1['player name'] + ' vs ' + player_2['player name'])
 
 attack(player_1, player_2)
+
