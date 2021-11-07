@@ -1,11 +1,4 @@
-name = input('Insert your name please: ')
+import os
 
-age = int(input('Your age please: '))
-
-person = {
-    'Name: ' : name,
-    'Age: ' : age
-    }
-
-
-print (person)
+for i in range(1, 3):
+    os.mkdir(i)
