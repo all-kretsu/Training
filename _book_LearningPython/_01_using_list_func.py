@@ -8,6 +8,9 @@ usernames = ['Ivan', 'Hannah']
 user_list(usernames)
 
 # 02 Change list in function
+# if need to deny deleting of list elements, add [:] at the end of arg
+# example 
+# def print_models(unprinted_designs[:], completed_models):
 
 def print_models(unprinted_designs, completed_models):
     while unprinted_designs:
@@ -25,4 +28,11 @@ completed_models = []
 
 print_models(unprinted_designs, completed_models)
 show_models()
+
+# 03 add random number of arguments into the function
+def make_pizza(*toppings):
+    for topping in toppings:
+        print(f'- {topping}')
+
+make_pizza('mushrooms', 'tomatoes', 'peppers', 'meat')
 
