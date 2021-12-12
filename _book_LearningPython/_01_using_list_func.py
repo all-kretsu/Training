@@ -36,3 +36,23 @@ def make_pizza(*toppings):
 
 make_pizza('mushrooms', 'tomatoes', 'peppers', 'meat')
 
+# 04 Using position and random arguments, random put at the end of func
+def make_pizza(size, *toppings):
+    print(f'Making a {size}-inch pizza with {toppings}.')
+    for topping in toppings:
+        print(f'- {topping}')
+        
+make_pizza(16, 'mushrooms', 'tomatoes', 'peppers', 'meat')
+
+# 05 Using random anemd arguments - kwargs
+# It creating a dictionary: key - value = argument
+def build_profile(first, last, **kwargs):
+    user_info('firt_name') = first
+    user_info('last_name') = last
+    return user_info
+
+user_profile = build_profile('albert', 'einstein',
+                            location = 'princeton',
+                            field = 'physics')
+
+print(user_profile)
