@@ -45,10 +45,10 @@ def make_pizza(size, *toppings):
 make_pizza(16, 'mushrooms', 'tomatoes', 'peppers', 'meat')
 
 # 05 Using random anemd arguments - kwargs
-# It creating a dictionary: key - value = argument
-def build_profile(first, last, **kwargs):
-    user_info('firt_name') = first
-    user_info('last_name') = last
+# It creating a dictionary: key - word = argument
+def build_profile(first, last, **user_info):
+    user_info['first_name'] = first
+    user_info['last_name'] = last
     return user_info
 
 user_profile = build_profile('albert', 'einstein',
