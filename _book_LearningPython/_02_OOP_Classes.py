@@ -23,8 +23,8 @@ class Car():
         self.name = name
         self.year = year
     def speed(self):
-        print(f'The name of car is {self.name}, the speed of it is {self.speed}')
-     
+        print(f'The name of car is {self.name}, ethe speed of it is {self.speed}')
+    
 
 
 
