@@ -1,7 +1,7 @@
 # training file
 # about classes
 
-class Car():
+class Car:
     def __init__(self, manufacturer, model, year):
         self.manufacturer = manufacturer
         self.model = model
@@ -20,8 +20,10 @@ class Car():
             self.odometer = mileage
         else:
             print('You cant roll back an odometer!')
+
     def increment_odometer(self, kilometers):
         self.odometer += kilometers
+
 
 my_new_car = Car('audi', 'a4', 2019)
 print(my_new_car.get_descriptive_name())
